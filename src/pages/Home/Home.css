@@ -1,0 +1,30 @@
+.backgroundHome{
+    background-image: url('../../assets/Background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	background-color: rgba(9, 9, 9, 0.2);
+	background-blend-mode: soft-light;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.sloganHome{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0 50px 0 50px;
+    font-size: 50px;
+}
+
+.reasonsToTravel{
+    min-height: calc(100vh);
+}
