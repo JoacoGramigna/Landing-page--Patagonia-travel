@@ -38,11 +38,11 @@ const Navbar = () => {
         <img src={Logo} alt="" />
       </div>
       <ul className={`links ${isMenuOpen ? 'active' : '' }`}>
-        <li onClick={handleClick}>Home</li>
-        <li onClick={handleClick}>Info</li>
-        <li onClick={handleClick}>Tours</li>
-        <li onClick={handleClick}>Gallery</li>
-        <li onClick={handleClick}>Contact</li>
+        <li>Home</li>
+        <li>Info</li>
+        <li>Tours</li>
+        <li>Gallery</li>
+        <li>Contact</li>
       </ul>
       <div className="navbarIcon">
       <ButtonHamburger isMenuOpen={isMenuOpen} onClick={handleClick}/>

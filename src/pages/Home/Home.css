@@ -27,4 +27,53 @@
 
 .reasonsToTravel{
     min-height: calc(100vh);
+    width: 100%;
+    padding: 0 15%;
+}
+
+.boxToRight{
+    display: flex;
+    justify-content: center;
+    margin: 70px 0;
+}
+
+.boxToLeft{
+    display: flex;
+    justify-content: center;
+    margin: 70px 0;
+}
+
+.box{
+    background-color: black;
+    width: 300px;
+    height: 450px;
+}
+
+.planeIcon{
+    position: absolute;
+    top: 100vh;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.planeIconActive{
+    position: absolute;
+    top: 200vh;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    transition: all 2.5s ease;
+}
+
+.planeImage{
+    width: 80px;
 }
