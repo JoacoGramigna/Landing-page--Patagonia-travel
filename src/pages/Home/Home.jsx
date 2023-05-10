@@ -3,10 +3,7 @@ import "./Home.css";
 import PlaneIcon from "../../assets/PlaneIcon.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
-AOS.init({
-  offset: 280,
-  duration: 600,
-});
+AOS.init();
 
 const Home = () => {
   const [isMoved, setMoved] = useState(false);
