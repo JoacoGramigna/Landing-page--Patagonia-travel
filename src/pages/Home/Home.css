@@ -1,69 +1,41 @@
-.backgroundHome{
-    background-image: url('../../assets/Background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-	background-color: rgba(9, 9, 9, 0.2);
-	background-blend-mode: soft-light;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: -1;
+:root {
+    --shadow-color: 213deg 93% 25%;
+    --shadow-elevation-medium:
+      0px 0.8px 0.8px hsl(var(--shadow-color) / 0.52),
+      0px 2.4px 2.5px -1px hsl(var(--shadow-color) / 0.48),
+      -0.1px 6.6px 6.9px -2px hsl(var(--shadow-color) / 0.44),
+      -0.1px 16.7px 17.5px -3px hsl(var(--shadow-color) / 0.39);
+      --secondary-color: rgb(10, 116, 238);
+}
+.backgroundHome {
+  background-image: url("../../assets/Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(9, 9, 9, 0.2);
+  background-blend-mode: soft-light;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  z-index: -1;
 }
 
-.sloganHome{
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Rubik', sans-serif;
-    color: white;
-    text-align: center;
-    margin: 0 50px 0 50px;
-    font-size: 50px;
+.sloganHome {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+  color: white;
+  text-align: center;
+  margin: 0 50px 0 50px;
+  font-size: 50px;
 }
 
-.reasonsToTravel{
-    width: 100%;
-    padding: 40px 15%;
-    overflow-x: hidden;
-    background-color: black;
-}
-
-.boxToRight{
-    float: left;
-    clear: both;
-}
-
-.boxToLeft{
-    float: right;
-    clear: both;
-}
-
-@media (max-width: 900px) {
-    .boxToRight{
-        float: none;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .boxToLeft{
-        float: none;
-        display: flex;
-        justify-content: center;
-    }
-}
-
-.box{
-    background-color: grey;
-    width: 300px;
-    height: 450px;
-    margin: 40px 0;
-}
-
-.planeIcon{
+.planeIcon {
     position: absolute;
     top: 100vh;
     bottom: 0;
@@ -75,9 +47,9 @@
     justify-content: center;
     z-index: 2;
     transition: all 1s ease;
-}
-
-.planeIconActive{
+  }
+  
+  .planeIconActive {
     position: absolute;
     top: 253vh;
     bottom: 0;
@@ -89,8 +61,70 @@
     justify-content: center;
     transition: all 4s ease-in-out;
     z-index: 2;
+  }
+  
+  .planeImage {
+    width: 80px;
+  }
+
+.homePage {
+    background-color: var(--secondary-color);
+    padding: 56px 200px;
+  }
+
+  .whyChooseUs::after {
+    content: '';
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--secondary-color);
+    height: 8%;
+  }
+
+  .whyChooseUs{
+    height: 100%;
+    overflow-x: hidden;
 }
 
-.planeImage{
-    width: 80px;
+  .whyChooseUs h2{
+  font-family: "Rubik", sans-serif;
+  color: white;
+}
+
+.boxCenter {
+    clear: both;
+  }
+
+.boxToRight {
+  float: left;
+}
+
+.boxToLeft {
+  float: right;
+}
+
+@media (max-width: 1200px) {
+  .boxToRight {
+    float: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  .boxToLeft {
+    float: none;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.box {
+  width: 350px;
+  height: 250px;
+  margin: 40px 0;
+  box-shadow: var(--shadow-elevation-medium);
+  border-radius: 10px;
+  background-color: white;
 }

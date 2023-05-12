@@ -3,7 +3,9 @@ import "./Home.css";
 import PlaneIcon from "../../assets/PlaneIcon.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
-AOS.init();
+AOS.init({
+  offset: 100,
+});
 
 const Home = () => {
   const [isMoved, setMoved] = useState(false);
@@ -33,13 +35,26 @@ const Home = () => {
       <div className={isMoved ? "planeIconActive" : "planeIcon"}>
         <img className="planeImage" src={PlaneIcon} alt="Avión" />
       </div>
-      <section className="reasonsToTravel">
-        <article className="boxToRight">
-          <div className="box" data-aos="fade-right"></div>
-        </article>
-        <article className="boxToLeft">
-          <div className="box" data-aos="fade-left"></div>
-        </article>
+      <section className="homePage">
+        <section className="whyChooseUs">
+            <h2>¿Por qué elegirnos?</h2>
+            <div className="boxCenter">
+            <article className="boxToRight">
+              <div className="box" data-aos="fade-right"></div>
+            </article>
+            <article className="boxToLeft">
+              <div className="box" data-aos="fade-left"></div>
+            </article>
+            </div>
+            <div className="boxCenter">
+            <article className="boxToRight">
+              <div className="box" data-aos="fade-right"></div>
+            </article>
+            <article className="boxToLeft">
+              <div className="box" data-aos="fade-left"></div>
+            </article>
+            </div>
+        </section>
       </section>
     </>
   );
