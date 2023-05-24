@@ -66,15 +66,46 @@ const Home = () => {
               Necessitatibus, temporibus. Nobis distinctio at enim quia
               assumenda, eveniet corrupti numquam est!
             </p>
-            <p className="paragraph"><i>+</i> Los mejores precios y ofertas.</p>
-            <p className="paragraph"><i>+</i> Las guías mas completas para tus visitas.</p>
-            <p className="paragraph"><i>+</i> Packs de viajes con todo incluido.</p>
+            <p className="paragraph">
+              <i>+</i> Los mejores precios y ofertas.
+            </p>
+            <p className="paragraph">
+              <i>+</i> Las guías mas completas para tus visitas.
+            </p>
+            <p className="paragraph">
+              <i>+</i> Packs de viajes con todo incluido.
+            </p>
             <button className="moreInfoButton">Ver mas</button>
           </article>
           <article className="imageAboutUs">
             <div className="image1" />
             <div className="image2" />
           </article>
+        </section>
+        <section className="travels">
+          <h2 className="travelsTitle">Nuestros mejores viajes</h2>
+          <div className="travelCards">
+            <article>
+              <div className="card1">
+                <h2>Patagonia</h2>
+              </div>
+            </article>
+            <article>
+              <div className="card2">
+              <h2>Patagonia</h2>
+              </div>
+            </article>
+            <article>
+              <div className="card3">
+              <h2>Patagonia</h2>
+              </div>
+            </article>
+            <article>
+              <div className="card4">
+              <h2>Patagonia</h2>
+              </div>
+            </article>
+          </div>
         </section>
       </section>
     </>

@@ -197,6 +197,119 @@
   clear: both;
 }
 
+.travels{
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  padding: 46px;
+  margin: 56px 120px 0;
+}
+
+.travelsTitle{
+font-family: var(--title-font);
+text-align: center;
+}
+
+.travelCards{
+  margin-top: 62px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card1{
+  width: 240px;
+  height: 360px;
+  background-image: url(../../assets/Background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all .8s ease;
+  border-radius: 5px;
+}
+
+.card1 h2{
+  font-family: var(--subtitle-font);
+  color: var(--primary-color);
+height: 100%;
+width: 100%;
+display: flex;
+}
+
+.card1:hover{
+  transform: scale(105%);
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: soft-light;
+  transition: all .5s ease;
+}
+
+.card2{
+  width: 240px;
+  height: 360px;
+  background-image: url(../../assets/Background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all .8s ease;
+  border-radius: 5px;
+}
+
+.card2 h2{
+  font-family: var(--subtitle-font);
+  color: var(--primary-color);
+}
+
+.card2:hover{
+  transform: scale(105%);
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: soft-light;
+  transition: all .5s ease;
+}
+
+.card3{
+  width: 240px;
+  height: 360px;
+  background-image: url(../../assets/Background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all .8s ease;
+  border-radius: 5px;
+}
+
+.card3 h2{
+  font-family: var(--subtitle-font);
+  color: var(--primary-color);
+}
+
+.card3:hover{
+  transform: scale(105%);
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: soft-light;
+  transition: all .5s ease;
+}
+
+.card4{
+  width: 240px;
+  height: 360px;
+  background-image: url(../../assets/Background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all .8s ease;
+  border-radius: 5px;
+}
+
+.card4 h2{
+  font-family: var(--subtitle-font);
+  color: var(--primary-color);
+}
+
+.card4:hover{
+  transform: scale(105%);
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: soft-light;
+  transition: all .5s ease;
+}
+
 @media (max-width: 1200px) {
   .boxToRight {
     float: none;
