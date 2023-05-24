@@ -1,12 +1,16 @@
 :root {
-    --shadow-color: 213deg 93% 25%;
-    --shadow-elevation-medium:
-      0px 0.8px 0.8px hsl(var(--shadow-color) / 0.52),
-      0px 2.4px 2.5px -1px hsl(var(--shadow-color) / 0.48),
-      -0.1px 6.6px 6.9px -2px hsl(var(--shadow-color) / 0.44),
-      -0.1px 16.7px 17.5px -3px hsl(var(--shadow-color) / 0.39);
-      --secondary-color: rgb(10, 116, 238);
+  --shadow-color: 213deg 93% 25%;
+  --shadow-elevation-medium: 0px 0.8px 0.8px hsl(var(--shadow-color) / 0.52),
+    0px 2.4px 2.5px -1px hsl(var(--shadow-color) / 0.48),
+    -0.1px 6.6px 6.9px -2px hsl(var(--shadow-color) / 0.44),
+    -0.1px 16.7px 17.5px -3px hsl(var(--shadow-color) / 0.39);
+  --primary-color: rgb(255, 255, 255);
+  --secondary-color: rgb(10, 116, 238);
+  --tertiary-color: rgb(9, 95, 193);
+  --primary-font: "Rubik", sans-serif;
+  --secondary-font: ;
 }
+
 .backgroundHome {
   background-image: url("../../assets/Background.jpg");
   background-repeat: no-repeat;
@@ -28,75 +32,76 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Rubik", sans-serif;
-  color: white;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
   text-align: center;
   margin: 0 50px 0 50px;
   font-size: 50px;
 }
 
 .planeIcon {
-    position: absolute;
-    top: 100vh;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    transition: all 1s ease;
-  }
-  
-  .planeIconActive {
-    position: absolute;
-    top: 253vh;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    transition: all 4s ease-in-out;
-    z-index: 2;
-  }
-  
-  .planeImage {
-    width: 80px;
-  }
-
-.homePage {
-    background-color: var(--secondary-color);
-    padding: 56px 200px;
-  }
-
-  .whyChooseUs::after {
-    content: '';
-    border-top-left-radius: 50% 100%;
-    border-top-right-radius: 50% 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: var(--secondary-color);
-    height: 8%;
-  }
-
-  .whyChooseUs{
-    height: 100%;
-    overflow-x: hidden;
+  position: absolute;
+  top: 100vh;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: all 1s ease;
 }
 
-  .whyChooseUs h2{
-  font-family: "Rubik", sans-serif;
-  color: white;
+.planeIconActive {
+  position: absolute;
+  top: 253vh;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  transition: all 4s ease-in-out;
+  z-index: 2;
+}
+
+.planeImage {
+  width: 80px;
+}
+
+.mainPage {
+  background-color: var(--secondary-color);
+  padding: 56px 0;
+}
+
+.whyChooseUs {
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0 200px;
+}
+
+.whyChooseUs::after {
+  content: "";
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--secondary-color);
+  height: 8%;
+}
+
+.whyChooseUs h2 {
+  font-family: var(--primary-font);
+  color: var(--primary-color);
 }
 
 .boxCenter {
-    clear: both;
-  }
+  clear: both;
+}
 
 .boxToRight {
   float: left;
@@ -106,25 +111,120 @@
   float: right;
 }
 
-@media (max-width: 1200px) {
-  .boxToRight {
-    float: none;
-    display: flex;
-    justify-content: center;
-  }
-
-  .boxToLeft {
-    float: none;
-    display: flex;
-    justify-content: center;
-  }
-}
-
 .box {
   width: 350px;
   height: 250px;
   margin: 40px 0;
   box-shadow: var(--shadow-elevation-medium);
   border-radius: 10px;
-  background-color: white;
+  background-color: var(--primary-color);
+}
+
+.aboutUs {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  padding: 46px;
+  display: flex;
+  margin: 56px 120px 0;
+}
+
+.infoAboutUs {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.imageAboutUs {
+  width: 40%;
+  margin-left: 22px;
+}
+
+.infoAboutUs h2 {
+  font-family: var(--primary-font);
+}
+
+.infoAboutUs h3 {
+  font-family: var(--primary-font);
+  font-size: 20px;
+  margin: 18px 0 32px 0;
+}
+
+.infoAboutUs p {
+  font-family: var(--primary-font);
+  font-size: 16px;
+}
+
+.paragraph0 {
+  margin: 15px 0 56px 0;
+}
+
+.paragraph {
+  margin: 5px 0;
+}
+
+.moreInfoButton {
+  margin-top: 28px;
+  padding: 12px 24px;
+  background: var(--secondary-color);
+  border: none;
+  border-radius: 5px;
+  font-family: sans-serif;
+  color: var(--primary-color);
+  font-size: 16px;
+  cursor: pointer;
+  width: 120px;
+}
+
+.moreInfoButton:hover {
+  background: var(--tertiary-color);
+}
+
+.image1 {
+  width: 310px;
+  height: 250px;
+  background-image: url("../../assets/Background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  float: right;
+  clear: both;
+  margin-bottom: 5px;
+}
+
+.image2 {
+  width: 250px;
+  height: 230px;
+  background-image: url("../../assets/Background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 5px;
+  float: left;
+  clear: both;
+}
+
+@media (max-width: 1200px) {
+  .boxToRight {
+    float: none;
+    display: flex;
+    justify-content: center;
+  }
+  .boxToLeft {
+    float: none;
+    display: flex;
+    justify-content: center;
+  }
+  .aboutUs {
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+  }
+  .infoAboutUs {
+    width: 100%;
+  }
+  .imageAboutUs {
+    display: none;
+  }
+  .moreInfoButton{
+    align-self: center;
+  }
 }
