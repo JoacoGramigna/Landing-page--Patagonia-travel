@@ -197,28 +197,27 @@
   clear: both;
 }
 
-.travels{
+.travels {
   background-color: var(--primary-color);
   border-radius: 10px;
   padding: 46px;
   margin: 56px 120px 0;
 }
 
-.travelsTitle{
-font-family: var(--title-font);
-text-align: center;
+.travelsTitle {
+  font-family: var(--title-font);
+  text-align: center;
 }
 
-.travelCards{
+.travelCards {
   margin-top: 62px;
   display: flex;
   justify-content: space-evenly;
 }
 
-.card1{
+.card {
   width: 240px;
   height: 360px;
-  background-image: url(../../assets/Background.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -226,88 +225,38 @@ text-align: center;
   border-radius: 5px;
 }
 
-.card1 h2{
-  font-family: var(--subtitle-font);
-  color: var(--primary-color);
-height: 100%;
-width: 100%;
-display: flex;
-}
-
-.card1:hover{
+.card:hover {
   transform: scale(105%);
   background-color: rgba(0, 0, 0, 0.3);
   background-blend-mode: soft-light;
   transition: all .5s ease;
 }
 
-.card2{
-  width: 240px;
-  height: 360px;
-  background-image: url(../../assets/Background.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.cardContent{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: all .5s ease;
+}
+
+.cardContent h2{
+  font-family: var(--subtitle-font);
+  color: var(--primary-color);
+}
+
+.cardContent p{
+  font-family: var(--text-font);
+  color: var(--primary-color);
+  margin: 8px 0 40px;
+}
+
+.card:hover .cardContent {
+  opacity: 1;
   transition: all .8s ease;
-  border-radius: 5px;
-}
-
-.card2 h2{
-  font-family: var(--subtitle-font);
-  color: var(--primary-color);
-}
-
-.card2:hover{
-  transform: scale(105%);
-  background-color: rgba(0, 0, 0, 0.3);
-  background-blend-mode: soft-light;
-  transition: all .5s ease;
-}
-
-.card3{
-  width: 240px;
-  height: 360px;
-  background-image: url(../../assets/Background.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: all .8s ease;
-  border-radius: 5px;
-}
-
-.card3 h2{
-  font-family: var(--subtitle-font);
-  color: var(--primary-color);
-}
-
-.card3:hover{
-  transform: scale(105%);
-  background-color: rgba(0, 0, 0, 0.3);
-  background-blend-mode: soft-light;
-  transition: all .5s ease;
-}
-
-.card4{
-  width: 240px;
-  height: 360px;
-  background-image: url(../../assets/Background.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: all .8s ease;
-  border-radius: 5px;
-}
-
-.card4 h2{
-  font-family: var(--subtitle-font);
-  color: var(--primary-color);
-}
-
-.card4:hover{
-  transform: scale(105%);
-  background-color: rgba(0, 0, 0, 0.3);
-  background-blend-mode: soft-light;
-  transition: all .5s ease;
 }
 
 @media (max-width: 1200px) {
@@ -332,7 +281,7 @@ display: flex;
   .imageAboutUs {
     display: none;
   }
-  .moreInfoButton{
+  .moreInfoButton {
     align-self: center;
   }
 }

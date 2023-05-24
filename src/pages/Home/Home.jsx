@@ -3,6 +3,8 @@ import "./Home.css";
 import PlaneIcon from "../../assets/PlaneIcon.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import card4 from "../../assets/Background.jpg";
+
 AOS.init({
   offset: 100,
 });
@@ -85,24 +87,28 @@ const Home = () => {
         <section className="travels">
           <h2 className="travelsTitle">Nuestros mejores viajes</h2>
           <div className="travelCards">
-            <article>
-              <div className="card1">
+            <article className="card" style={{ backgroundImage: `url(${card4})` }}>
+              <div className="cardContent">
                 <h2>Patagonia</h2>
+                <p>Ver mas</p>
               </div>
             </article>
-            <article>
-              <div className="card2">
+            <article className="card" style={{ backgroundImage: `url(${card4})` }}>
+              <div className="cardContent">
               <h2>Patagonia</h2>
+              <p>Ver mas</p>
               </div>
             </article>
-            <article>
-              <div className="card3">
+            <article className="card" style={{ backgroundImage: `url(${card4})` }}>
+              <div className="cardContent">
               <h2>Patagonia</h2>
+              <p>Ver mas</p>
               </div>
             </article>
-            <article>
-              <div className="card4">
+            <article className="card" style={{ backgroundImage: `url(${card4})` }} >
+              <div className="cardContent">
               <h2>Patagonia</h2>
+              <p>Ver mas</p>
               </div>
             </article>
           </div>
