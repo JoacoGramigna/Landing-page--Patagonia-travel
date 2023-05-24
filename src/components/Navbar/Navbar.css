@@ -68,7 +68,7 @@
 
 .links li {
   list-style: none;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--subtitle-font);
 }
 
 .navbarIcon {
