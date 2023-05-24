@@ -4,11 +4,6 @@
     0px 2.4px 2.5px -1px hsl(var(--shadow-color) / 0.48),
     -0.1px 6.6px 6.9px -2px hsl(var(--shadow-color) / 0.44),
     -0.1px 16.7px 17.5px -3px hsl(var(--shadow-color) / 0.39);
-  --primary-color: rgb(255, 255, 255);
-  --secondary-color: rgb(10, 116, 238);
-  --tertiary-color: rgb(9, 95, 193);
-  --primary-font: "Rubik", sans-serif;
-  --secondary-font: ;
 }
 
 .backgroundHome {
@@ -32,7 +27,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: var(--primary-font);
+  font-family: var(--title-font);
   color: var(--primary-color);
   text-align: center;
   margin: 0 50px 0 50px;
@@ -95,7 +90,7 @@
 }
 
 .whyChooseUs h2 {
-  font-family: var(--primary-font);
+  font-family: var(--title-font);
   color: var(--primary-color);
 }
 
@@ -141,17 +136,17 @@
 }
 
 .infoAboutUs h2 {
-  font-family: var(--primary-font);
+  font-family: var(--title-font);
 }
 
 .infoAboutUs h3 {
-  font-family: var(--primary-font);
+  font-family: var(--subtitle-font);
   font-size: 20px;
   margin: 18px 0 32px 0;
 }
 
 .infoAboutUs p {
-  font-family: var(--primary-font);
+  font-family: var(--text-font);
   font-size: 16px;
 }
 
