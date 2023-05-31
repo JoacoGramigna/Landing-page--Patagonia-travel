@@ -108,11 +108,33 @@
 
 .box {
   width: 350px;
-  height: 250px;
+  height: 230px;
   margin: 40px 0;
   box-shadow: var(--shadow-elevation-medium);
   border-radius: 10px;
   background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  padding: 18px 24px;
+}
+
+.box svg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.box h3{
+  font-family: var(--subtitle-font);
+  text-align: center;
+  margin-top: 12px;
+}
+
+.box p {
+  font-family: var(--text-font);
+  text-align: start;
+  margin-top: 18px;
 }
 
 .aboutPatagonia {
