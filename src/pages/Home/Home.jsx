@@ -59,6 +59,18 @@ const Home = () => {
             </article>
           </div>
         </section>
+        <section className="aboutPatagonia">
+          <h2>La Patagonia</h2>
+          <article className="infoAboutPatagonia">
+          <div className="imageAboutPatagonia"/>
+          <div className="paragraphInfoPatagonia">
+            <p>La Patagonia Argentina, un vasto y asombroso territorio en el extremo sur del continente americano.</p>
+            <p>Con paisajes de ensueño, montañas imponentes, glaciares majestuosos y vastas llanuras, este lugar cautiva a los amantes de la naturaleza y la aventura.</p> 
+            <p>Descubre la magia de sus parques nacionales, la riqueza de su flora y fauna, y sumérgete en la cultura de sus pueblos originarios.</p>
+            <p>¡Bienvenido a la Patagonia, un destino que te dejará sin aliento!</p>
+            </div>
+          </article>
+        </section>
         <section className="aboutUs">
           <article className="infoAboutUs">
             <h2>Sobre nosotros</h2>

@@ -115,6 +115,45 @@
   background-color: var(--primary-color);
 }
 
+.aboutPatagonia {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  padding: 46px;
+  margin: 56px 120px 0;
+}
+
+.infoAboutPatagonia{
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+
+.imageAboutPatagonia{
+  background-image: url(../../assets/Background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+}
+
+.aboutPatagonia h2{
+  font-family: var(--title-font);
+}
+
+.paragraphInfoPatagonia{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.paragraphInfoPatagonia p{
+  font-family: var(--text-font);
+  width: 75%;
+}
+
 .aboutUs {
   background-color: var(--primary-color);
   border-radius: 10px;
