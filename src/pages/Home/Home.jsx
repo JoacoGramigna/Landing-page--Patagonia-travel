@@ -43,7 +43,7 @@ const Home = () => {
         <section className="whyChooseUs">
           <h2>¿Por qué elegirnos?</h2>
           <div className="boxCenter">
-            <article className="boxToRight">
+            <article className="boxToRight1">
               <div className="box" data-aos="fade-right">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -62,46 +62,142 @@ const Home = () => {
                   <path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296z" />
                 </svg>
                 <h3>Calidad y seguridad</h3>
-                <p>Garantizamos altos estándares de calidad y seguridad en todos nuestros servicios de viaje.</p>
+                <p>
+                  Garantizamos altos estándares de calidad y seguridad en todos
+                  nuestros servicios de viaje.
+                </p>
               </div>
             </article>
-            <article className="boxToLeft">
+            <article className="boxToCenter1">
+              <div className="box" data-aos="fade-down">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-currency-dollar"
+                  width="60"
+                  height="60"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#00abfb"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M16.7 8a3 3 0 0 0 -2.7 -2h-4a3 3 0 0 0 0 6h4a3 3 0 0 1 0 6h-4a3 3 0 0 1 -2.7 -2" />
+                  <path d="M12 3v3m0 12v3" />
+                </svg>
+                <h3>Relación calidad-precio</h3>
+                <p>
+                  Brindamos una experiencia de viaje excepcional sin comprometer
+                  tu presupuesto.
+                </p>
+              </div>
+            </article>
+            <article className="boxToLeft1">
               <div className="box" data-aos="fade-left">
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-  <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-  <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
-</svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-user-circle"
+                  width="60"
+                  height="60"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#00abfb"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                  <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                  <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
+                </svg>
                 <h3>Atención personalizada</h3>
-                <p>Nuestro equipo de expertos estará a tu disposición para brindarte una atención personalizada y adaptada a tus necesidades.</p>
+                <p>
+                  Nuestro equipo de expertos estará a tu disposición para
+                  brindarte una atención personalizada y adaptada a tus
+                  necesidades.
+                </p>
               </div>
             </article>
-          </div>
-          <div className="boxCenter">
-            <article className="boxToRight">
+            <article className="boxToRight2">
               <div className="box" data-aos="fade-right">
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin-star" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M15 11a3 3 0 1 0 -3.908 2.86" />
-  <path d="M11.059 21.25a2 2 0 0 1 -.472 -.35l-4.244 -4.243a8 8 0 1 1 13.646 -6.079" />
-  <path d="M17.8 20.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z" />
-</svg>
-<h3>Destinos únicos</h3>
-<p>Descubre destinos exclusivos y sorprendentes que te permitirán vivir experiencias inolvidables.</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-map-pin-star"
+                  width="60"
+                  height="60"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#00abfb"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M15 11a3 3 0 1 0 -3.908 2.86" />
+                  <path d="M11.059 21.25a2 2 0 0 1 -.472 -.35l-4.244 -4.243a8 8 0 1 1 13.646 -6.079" />
+                  <path d="M17.8 20.817l-2.172 1.138a.392 .392 0 0 1 -.568 -.41l.415 -2.411l-1.757 -1.707a.389 .389 0 0 1 .217 -.665l2.428 -.352l1.086 -2.193a.392 .392 0 0 1 .702 0l1.086 2.193l2.428 .352a.39 .39 0 0 1 .217 .665l-1.757 1.707l.414 2.41a.39 .39 0 0 1 -.567 .411l-2.172 -1.138z" />
+                </svg>
+                <h3>Destinos únicos</h3>
+                <p>
+                  Descubre destinos exclusivos y sorprendentes que te permitirán
+                  vivir experiencias inolvidables.
+                </p>
               </div>
             </article>
-            <article className="boxToLeft">
+            <article className="boxToCenter2">
+              <div className="box" data-aos="fade-up">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-plant"
+                  width="60"
+                  height="60"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#00abfb"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M7 15h10v4a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2v-4z" />
+                  <path d="M12 9a6 6 0 0 0 -6 -6h-3v2a6 6 0 0 0 6 6h3" />
+                  <path d="M12 11a6 6 0 0 1 6 -6h3v1a6 6 0 0 1 -6 6h-3" />
+                  <path d="M12 15l0 -6" />
+                </svg>
+                <h3>Responsabilidad ambiental</h3>
+                <p>
+                  Nos preocupamos por el medio ambiente y promovemos prácticas
+                  turísticas respetuosas con la naturaleza.
+                </p>
+              </div>
+            </article>
+            <article className="boxToLeft2">
               <div className="box" data-aos="fade-left">
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mood-smile-beam" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M12 21a9 9 0 1 1 0 -18a9 9 0 0 1 0 18z" />
-  <path d="M10 10c-.5 -1 -2.5 -1 -3 0" />
-  <path d="M17 10c-.5 -1 -2.5 -1 -3 0" />
-  <path d="M14.5 15a3.5 3.5 0 0 1 -5 0" />
-</svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-mood-smile-beam"
+                  width="60"
+                  height="60"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#00abfb"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 21a9 9 0 1 1 0 -18a9 9 0 0 1 0 18z" />
+                  <path d="M10 10c-.5 -1 -2.5 -1 -3 0" />
+                  <path d="M17 10c-.5 -1 -2.5 -1 -3 0" />
+                  <path d="M14.5 15a3.5 3.5 0 0 1 -5 0" />
+                </svg>
                 <h3>Satisfacción garantizada</h3>
-                <p>Nos esforzamos por superar tus expectativas y asegurarte una experiencia de viaje inolvidable y satisfactoria.</p>
+                <p>
+                  Nos esforzamos por superar tus expectativas y asegurarte una
+                  experiencia de viaje inolvidable y satisfactoria.
+                </p>
               </div>
             </article>
           </div>

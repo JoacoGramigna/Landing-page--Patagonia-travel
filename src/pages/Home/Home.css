@@ -74,7 +74,7 @@
 .whyChooseUs {
   height: 100%;
   overflow-x: hidden;
-  margin: 0 200px;
+  margin: 0 120px;
 }
 
 .whyChooseUs::after {
@@ -95,15 +95,37 @@
 }
 
 .boxCenter {
-  clear: both;
+  display: grid;
+  grid-template-areas: 
+  "boxToRight1 boxToCenter1 boxToLeft1"
+  "boxToRight2 boxToCenter2 boxToLeft2";
+  justify-content: space-between;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
-.boxToRight {
-  float: left;
+.boxToRight1 {
+  grid-area: boxToRight1;
 }
 
-.boxToLeft {
-  float: right;
+.boxToRight2 {
+  grid-area: boxToRight2;
+}
+
+.boxToCenter1 {
+  grid-area: boxToCenter1;
+}
+
+.boxToCenter2 {
+  grid-area: boxToCenter2;
+}
+
+.boxToLeft1 {
+  grid-area: boxToLeft1;
+}
+
+.boxToLeft2 {
+  grid-area: boxToLeft2;
 }
 
 .box {
